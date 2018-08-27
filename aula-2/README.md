@@ -4,25 +4,25 @@ Comandos executados via shell
    pwd
 
 2. Cria um novo diretório:
-   mkdir <nome>
+   mkdir nome
 
 3. Navega entre diretórios:
-   cd <diretorio>
+   cd diretorio
 
 4. Remover um arquivo:
-   rm <arquivo>
+   rm arquivo
 
 5. Remover um diretório:
-   rm -rf <diretorio>
+   rm -rf diretorio
 
 6. Listar os arquivos e pastas do diretório:
    ls
 
 7. Copiar arquivos e diretórios:
-   cp <arquivo> <novo_arquivo>
+   cp arquivo> novo_arquivo
 
 8. Copiar arquivos entre computadores distintos:
-   scp <arquivo> usr@ip:/diretorio/destino
+   scp arquivo usr@ip:/diretorio/destino
 
 9. Definir uma variável de ambiente:
    export VARIAVEL=<conteudo>
@@ -43,7 +43,7 @@ Comandos executados via shell
    echo $SHELL
 
 15. Fazer login em um computador remoto:
-   ssh <usuario>@<ip>
+   ssh usuario@ip
 
 16. Consulta e mostra o IP da máquina:
    curl http://ifconfig.co
@@ -52,10 +52,10 @@ Comandos executados via shell
    ifconfig
 
 18. Mostra e atualiza em tempo real alguma aplicação:
-   watch <aplicacao>
+   watch aplicacao
 
 19. Realiza teste de ping (resposta) para algum computador remoto:
-   ping <ip>
+   ping ip
 
 20. Abre um arquivo de texto com o editor de texto GNU nano:
-   nano <arquivo.txt>
+   nano arquivo.txt
