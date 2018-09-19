@@ -1,0 +1,15 @@
+[user]
+	name = murillonunes
+	email = murillonunes@inf.ufg.br
+[credential]
+[push]
+	default = matching
+[filter "lfs"]
+	clean = git-lfs clean %f
+	smudge = git-lfs smudge %f
+	required = true
+[credencial]
+	helper = wincred
+	helper = murillonunes
+[credential]
+	helper = wincred
