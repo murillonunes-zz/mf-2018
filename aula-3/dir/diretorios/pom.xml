@@ -10,13 +10,13 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <project.mainClass>com.github.murillonunes.mf-2018.aula-3.csv.Aplicacao</project.mainClass>
+        <project.mainClass>com.github.murillonunes.mf-2018.aula-3.dir.diretorios.DiretorioListarDirs</project.mainClass>
     </properties>
 
     <name>${project.groupId}:${project.artifactId}</name>
 
     <description>
-		Projeto com o objetivo de prover um programa que atenda às especificações do exercício 11 da aula 3 da disciplina de Métodos e Ferramentas de ES, ministrada pelo professor Fábio Lucena.
+		Projeto com o objetivo de prover um programa que atenda às especificações do exercício 12 da aula 3 da disciplina de Métodos e Ferramentas de ES, ministrada pelo professor Fábio Lucena.
     </description>
 
     <url>https://github.com/murillonunes/mf-2018</url>
@@ -91,7 +91,7 @@
     <build>
 
         <!-- Define o nome do arquivo a ser gerado (.jar é acrescentada) -->
-        <finalName>csv</finalName>
+        <finalName>mf-2018-diretorios</finalName>
 
         <plugins>
 
@@ -221,10 +221,10 @@
                 </dependencies>
                 <configuration>
                     <targetClasses>
-                        <param>com.github.murillonunes.mf-2018.aula-3.csv.Aplicacao</param>
+                        <param>com.github.murillonunes.mf-2018.aula-3.dir.diretorios.DiretorioListarDirs</param>
                     </targetClasses>
                     <targetTests>
-                        <param>com.github.murillonunes.mf-2018.aula-3.csv.*</param>
+                        <param>com.github.murillonunes.mf-2018.aula-3.dir.diretorios.*</param>
                     </targetTests>
                 </configuration>
             </plugin>
@@ -517,7 +517,7 @@
                                     <goal>single</goal>
                                 </goals>
                                 <configuration>
-                                    <finalName>csv-unico</finalName>
+                                    <finalName>mf-2018-diretorios-unico</finalName>
                                     <archive>
                                         <manifest>
                                             <mainClass>${project.mainClass}</mainClass>
