@@ -4,10 +4,12 @@
 [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.github.kyriosdata/exemplo/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.github.kyriosdata/exemplo)
 
 # Escopo e objetivo
-Projeto criado e desenvolvido em virtude do exercício 12, da aula 3, da disciplina de Métodos e Ferramentas 
+Projeto criado e desenvolvido em virtude do exercício 11, da aula 3, da disciplina de Métodos e Ferramentas 
 de Engenharia de Software. A disciplina foi ministrada pelo professor Fábio Lucena no INF/UFG.
 
-O projeto disponibiliza um programa em Java para que, quando executado, liste todos os diretórios disponíveis a partir do diretório corrente.
+O projeto disponibiliza um programa em Java para download, leitura e manipulação de arquivos no formato CSV.
+Inicialmente foi desenvolvido para manipular um arquivo CSV que contém dados sobre as IES (Instituições de Ensino Superior)
+do Brasil, separar a quantidade de IES por estado e ordenar a lista de forma decrescente.
 
 Foi utilizado o padrão de organização de código em Java definido pelo professor F. Lucena
  (https://github.com/kyriosdata/exemplo).

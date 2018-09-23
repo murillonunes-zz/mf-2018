@@ -2,7 +2,7 @@
  * Copyright (c) 2018. Engenharia de Software - Instituto de Informática (UFG)
  * Creative Commons Attribution 4.0 International License.
  */
-package com.github.murillonunes.mf2018.aula3;
+package com.github.murillonunes.mf2018.aula3.csv;
 
 import java.io.BufferedReader;
 import java.io.IOException;
