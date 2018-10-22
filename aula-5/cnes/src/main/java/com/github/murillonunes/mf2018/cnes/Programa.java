@@ -23,7 +23,7 @@ public final class Programa {
 
     private static final String DEFAULT_URL = "ftp://ftp.datasus.gov.br/cnes/BASE_DE_DADOS_CNES_201809.ZIP";
     // Alterar para barra invertida caso queira executar o Programa no Windows. Para sistemas Linux usar barra para a direita.
-    private static final String DEFAULT_FILE = "web-app\\estabelecimentos.json";
+    private static final String DEFAULT_FILE = "web-app/src/estabelecimentos.json";
     private static final String ESTABELECIMENTOS_DEFAULT_FILE = "tbEstabelecimento201809.csv";
 
     /**
