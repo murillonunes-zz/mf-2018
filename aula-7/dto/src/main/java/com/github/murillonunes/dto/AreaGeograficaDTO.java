@@ -21,7 +21,7 @@ import java.time.LocalDate;
  * @since 2018
  * @version 1.0
  */
-@XmlRootElement(name = "certidaoTipo")
+@XmlRootElement(name = "areaGeografica")
 public class AreaGeograficaDTO {
 
     private final static GsonBuilder GSON_BUILDER;
