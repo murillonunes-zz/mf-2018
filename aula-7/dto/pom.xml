@@ -42,6 +42,20 @@
 
     <dependencies>
 
+        <!-- https://mvnrepository.com/artifact/org.json/json -->
+        <dependency>
+            <groupId>org.json</groupId>
+            <artifactId>json</artifactId>
+            <version>20180813</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/org.apache.commons/commons-lang3 -->
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-lang3</artifactId>
+            <version>3.0</version>
+        </dependency>
+
         <!-- https://mvnrepository.com/artifact/com.google.code.gson/gson -->
         <dependency>
             <groupId>com.google.code.gson</groupId>
@@ -267,7 +281,6 @@
                 <artifactId>maven-pmd-plugin</artifactId>
                 <version>3.10.0</version>
                 <configuration>
-                    <linkXref>true</linkXref>
                     <sourceEncoding>utf-8</sourceEncoding>
                     <minimumTokens>10</minimumTokens>
                     <excludes>
@@ -323,7 +336,6 @@
                 <artifactId>maven-pmd-plugin</artifactId>
                 <version>3.10.0</version>
                 <configuration>
-                    <linkXref>true</linkXref>
                     <sourceEncoding>utf-8</sourceEncoding>
                     <minimumTokens>100</minimumTokens>
                     <excludes>
@@ -489,6 +501,7 @@
                                 <manifest>
                                     <addClasspath>true</addClasspath>
                                     <classpathPrefix>jars/</classpathPrefix>
+                                    <!--suppress UnresolvedMavenProperty -->
                                     <mainClass>${project.mainClass}</mainClass>
                                 </manifest>
                             </archive>
@@ -519,6 +532,7 @@
                                     <finalName>${project.artifactId}-${project.version}-unico</finalName>
                                     <archive>
                                         <manifest>
+                                            <!--suppress UnresolvedMavenProperty -->
                                             <mainClass>${project.mainClass}</mainClass>
                                         </manifest>
                                     </archive>

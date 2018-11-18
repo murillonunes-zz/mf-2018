@@ -3,7 +3,7 @@
  * Fábrica de Software - Instituto de Informática (UFG)
  * Creative Commons Attribution 4.0 International License.
  */
-package com.github.murillonunes.dto;
+package com.github.murillonunes.aula7.dto;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
