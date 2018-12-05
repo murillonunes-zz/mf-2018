@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.github.murillonunes.mf2018.aula8</groupId>
+    <artifactId>loinc</artifactId>
+    <version>1.0-SNAPSHOT</version>
+
+    <properties>
+        <project.githubUser>murillonunes</project.githubUser>
+        <project.githubRepository>mf-2018</project.githubRepository>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+
+    <name>${project.groupId}:${project.artifactId}</name>
+
+    <description>
+        Projeto '${project.artifactId}'.
+    </description>
+
+    <url>https://github.com/${project.githubUser}/${project.githubRepository}</url>
+
+    <organization>
+        <name>Instituto de Informática (UFG) - Fábrica de Software</name>
+        <url>http://www.inf.ufg.br</url>
+    </organization>
+
+    <inceptionYear>2018</inceptionYear>
+
+    <licenses>
+        <license>
+            <name>Creative Commons Attribution 4.0 International (CC BY 4.0)</name>
+            <comments>A atribuição deve conter, explicitamente, a seguinte linha:
+                Copyright (c) 2018. Fábrica de Software - Instituto de Informática (UFG)
+            </comments>
+            <url>https://creativecommons.org/licenses/by/4.0/</url>
+        </license>
+    </licenses>
+
+</project>
