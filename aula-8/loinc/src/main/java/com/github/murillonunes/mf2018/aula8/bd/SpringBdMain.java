@@ -11,16 +11,16 @@ public class SpringBdMain {
 
         TermoRepositorio repo = applicationContext.getBean(TermoRepositorio.class);
 
-        repo.listarTodos().forEach(loincNum -> System.out.println("Método listar():" + loincNum));
+        //repo.listarTodos().forEach(loincNum -> System.out.println("Método listar():" + loincNum));
 
-        System.out.println("Método buscarPorLoincNum(): " + repo.buscarPorLoincNum("10003-2"));
+        //System.out.println("Método buscarPorLoincNum(): " + repo.buscarPorLoincNum("10003-2"));
 
-        System.out.println("Método buscarPorComponent(): " + repo.buscarPorComponent("R wave duration.lead I"));
+        System.out.println("Método buscarPorComponent(): " + repo.buscarPorComponent("R wave"));
 
-        System.out.println("Método buscarPorLongName(): " + repo.buscarPorLongName(
-                "DBG Ab [Presence] in Serum or Plasma from Blood product unit"));
+        //System.out.println("Método buscarPorLongName(): " + repo.buscarPorLongName(
+        //        "DBG Ab [Presence] in Serum or Plasma from Blood product unit"));
 
-        System.out.println("Método buscarPorShortName(): " + repo.buscarPorShortName("R wave dur L-V1"));
+        //System.out.println("Método buscarPorShortName(): " + repo.buscarPorShortName("R wave dur L-V1"));
 
         applicationContext.close();
 
