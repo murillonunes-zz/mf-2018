@@ -36,10 +36,10 @@ public class TermoRepositorio {
      * Método que busca Termos LOINC a partir de um número
      *
      * @param loincNum Número LOINC que se quer buscar no banco de dados
-     * @return Lista com todos os Termos LOINC encontrados a partir do número
+     * @return Termo LOINC encontrado a partir do número
      */
-    public List<Termo> buscarPorLoincNum(String loincNum) {
-        return jdbcTemplate.query("select * from loinc where charindex('" + loincNum + "', loinc_num) > 0",
+    public Termo buscarPorLoincNum(String loincNum) {
+        return jdbcTemplate.queryForObject("select * from loinc where loinc_num = ?", new Object[]{ loincNum },
                 (rs, rowNum) -> new Termo(
                         rs.getString("loinc_num"),
                         rs.getString("component"),
@@ -52,10 +52,10 @@ public class TermoRepositorio {
      * Método que busca Termos LOINC a partir do seu Component
      *
      * @param component Component LOINC que se quer buscar no banco de dados
-     * @return Lista com todos os Termos LOINC encontrados a partir do seu Component
+     * @return Termo LOINC encontrado a partir do Component
      */
-    public List<Termo> buscarPorComponent(String component) {
-        return jdbcTemplate.query("select * from loinc where charindex('" + component + "', component) > 0",
+    public Termo buscarPorComponent(String component) {
+        return jdbcTemplate.queryForObject("select * from loinc where component = ?", new Object[]{ component },
                 (rs, rowNum) -> new Termo(
                         rs.getString("loinc_num"),
                         rs.getString("component"),
@@ -68,10 +68,11 @@ public class TermoRepositorio {
      * Método que busca Termos LOINC a partir do seu Long Name
      *
      * @param longName Long Name LOINC que se quer buscar no banco de dados
-     * @return Lista com todos os Termos LOINC encontrados a partir do seu Long Name
+     * @return Termo LOINC encontrado a partir do Long Name
      */
-    public List<Termo> buscarPorLongName(String longName) {
-        return jdbcTemplate.query("select * from loinc where charindex('" + longName + "', long_common_name) > 0",
+    public Termo buscarPorLongName(String longName) {
+        return jdbcTemplate.queryForObject("select * from loinc where long_common_name = ?",
+                new Object[]{ longName },
                 (rs, rowNum) -> new Termo(
                         rs.getString("loinc_num"),
                         rs.getString("component"),
@@ -86,8 +87,8 @@ public class TermoRepositorio {
      * @param shortName Shortname LOINC que se quer buscar no banco de dados
      * @return Lista com todos os Termos LOINC encontrados a partir do seu Shortname
      */
-    public List<Termo> buscarPorShortName(String shortName) {
-        return jdbcTemplate.query("select * from loinc where charindex('" + shortName + "', shortname) > 0",
+    public Termo buscarPorShortName(String shortName) {
+        return jdbcTemplate.queryForObject("select * from loinc where shortname = ?", new Object[]{ shortName },
                 (rs, rowNum) -> new Termo(
                         rs.getString("loinc_num"),
                         rs.getString("component"),
