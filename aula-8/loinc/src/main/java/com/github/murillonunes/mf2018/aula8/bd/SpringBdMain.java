@@ -13,7 +13,17 @@ public class SpringBdMain {
 
         repo.listarTodos().forEach(loincNum -> System.out.println("Método listar():" + loincNum));
 
-        System.out.println("Método buscarPorLoincNum(): " + repo.buscarPorLoincNum("10003-2"));
+        //System.out.println("Método buscarPorLoincNum(): " + repo.buscarPorLoincNum("10003-2"));
+
+        //System.out.println("Método buscarPorComponent(): " + repo.buscarPorComponent("lead V"));
+
+        repo.buscarPorLoincNum("100").forEach(loincNum -> System.out.println("Método buscarPorLoincNum(): " + loincNum));
+
+        repo.buscarPorComponent("R wave duration.lead II").forEach(loincNum -> System.out.println("Método buscarPorComponent(): " + loincNum));
+
+        repo.buscarPorLongName("R wave duration in lead AVR").forEach((loincNum -> System.out.println("Método buscarPorLongName(): " + loincNum)));
+
+        repo.buscarPorShortName("R wave dur L-I").forEach(loincNum -> System.out.println("Método buscarPorShortName(): " + loincNum));
 
         applicationContext.close();
 
